@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/brain-maintain.css">
+  </head>
+  <body>
+    <div class="welcome">
+      <h1 class="title">Brain Maintain</h1>
+    </div>
+
+    <div class="box login">
+      <form action="/login" method="post">
+        <input type="text" name="username" placeholder="Username" autofocus>
+
+        <input type="password" name="password" placeholder="Password">
+
+        <div class="submit">
+          <button class="btn btn-login" type="submit">Log In</button>
+
+          <p class="help-inline">or <a href="/register">Register</a></p>
+        </div>
+      </form>
+
+      <div class="page"></div>
+    </div>
+  </body>
+</html>

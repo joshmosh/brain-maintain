@@ -1,0 +1,34 @@
+{
+  "name": "brain-maintain",
+  "version": "0.0.3",
+  "private": true,
+
+  "dependencies": {
+    "express": "3.0.0rc2",
+    "connect-flash": "0.1.0",
+    "ejs": "*",
+    "handlebars-precompiler": "1.0.x",
+    "passport": "0.1.12",
+    "passport-local": "0.1.6",
+    "socket.io": "0.9.x",
+    "mongoose": "2.7.x",
+    "underscore": "1.3.x",
+    "MD5": "1.0.0",
+    "underscore": "1.3.3",
+    "backbone": "0.9.2"
+  },
+
+  "devDependencies": {
+    "should": "1.1.x"
+  },
+
+  "scripts": {
+    "start": "node app.js"
+  },
+
+  "subdomain": "brain-maintain",
+
+  "engines": {
+    "node": "v0.8.x"
+  }
+}

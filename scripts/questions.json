@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "question": "10 + 35",
+      "answer": 45
+    },
+    {
+      "question": "100 / 20",
+      "answer": 5
+    },
+    {
+      "question": "9 * 8",
+      "answer": 72
+    },
+    {
+      "question": "28 - 7",
+      "answer": 21
+    },
+    {
+      "question": "16 + 45",
+      "answer": 61
+    },
+    {
+      "question": "65 / 5",
+      "answer": 13
+    },
+    {
+      "question": "7 * 6",
+      "answer": 42
+    },
+    {
+      "question": "83 - 16",
+      "answer": 67
+    },
+    {
+      "question": "54 + 19",
+      "answer": 73
+    },
+    {
+      "question": "78 / 2",
+      "answer": 39
+    },
+    {
+      "question": "3 * 6",
+      "answer": 18
+    },
+    {
+      "question": "47 - 23",
+      "answer": 24
+    }
+  ]
+}

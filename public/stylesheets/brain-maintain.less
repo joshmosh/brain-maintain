@@ -1,0 +1,257 @@
+@import "lib/reset.less";
+@import "lib/mixins.less";
+
+
+@fontFamily: "helvetica neue", "helvetica", "arial", sans-serif;
+@linkColor: #2A5FA1;
+
+/*
+ * Base
+ ----------------------------------------------*/
+
+html, body {
+  background-color: #EFEFEF;
+  color: #333;
+  font-family: @fontFamily;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: @linkColor;
+}
+
+.unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Scaffolding
+ ----------------------------------------------*/
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.box {
+  background: #FFF;
+  border: 1px solid #D3D3D3;
+  .border-radius(3px);
+  margin: 0 auto;
+  padding: 30px 15px;
+  position: relative;
+  width: 350px;
+
+  .page {
+    @shadow: 0 3px 5px rgba(0, 0, 0, .05);
+
+    border: 1px solid #D3D3D3;
+    border-top: 0;
+    .border-radius(0 0 3px 3px);
+    bottom: -3px;
+    .box-shadow(@shadow);
+    height: 5px;
+    left: -1px;
+    position: absolute;
+    width: 380px;
+  }
+}
+
+/*
+ * Type
+ ----------------------------------------------*/
+
+.title, .brand {
+  color: #154A8D;
+  letter-spacing: 2px;
+  line-height: 1em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #406FAB;
+}
+
+/*
+ * Forms
+ ----------------------------------------------*/
+
+input, button {
+  font-family: @fontFamily;
+  font-size: 13px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+form {
+  .help-inline {
+    display: inline;
+    margin: 0;
+  }
+
+  .submit {
+    margin-top: 12px;
+  }
+}
+
+/*
+ * Login
+ ----------------------------------------------*/
+
+.welcome {
+  background-color: @linkColor;
+  padding: 45px 0;
+  margin-bottom: 60px;
+}
+
+.login input {
+  background-color: #EFEFEF;
+  border: 1px solid #D3D3D3;
+  color: #666;
+  .border-radius(2px);
+  display: block;
+  margin-bottom: 8px;
+  padding: 4px;
+  width: 340px;
+}
+
+.login button {
+  @shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
+
+  background-color: @linkColor;
+  border: 1px solid @linkColor;
+  .border-radius(3px);
+  .box-shadow(@shadow);
+  color: #FFF;
+  font-size: 11px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+/*
+ * Register
+ ----------------------------------------------*/
+
+.register button {
+  background-color: #2AA140;
+  border-color: #2AA140;
+}
+
+/*
+ * Game
+ ----------------------------------------------*/
+
+.nav-bar {
+  .clearfix();
+  color: #DFDFDF;
+  background-color: @linkColor;
+
+  a {
+    color: #FFF;
+  }
+
+  .brand {
+    color: #154A8D;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    text-decoration: none;
+  }
+
+  .logger {
+    float: right;
+
+    .user {
+      color: #FFF;
+    }
+  }
+}
+
+.brain-maintain .box {
+  .clearfix();
+  margin: 60px auto 0;
+  padding: 0;
+  width: 650px;
+
+  .page {
+    width: 650px;
+  }
+
+  .label {
+    margin: 0 0 10px;
+  }
+}
+
+.game {
+  border-right: 1px dotted #D3D3D3;
+  float: left;
+  height: 280px;
+  position: relative;
+  width: 479px;
+}
+
+.current-question {
+  padding: 15px;
+
+  .question {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+
+  input, button {
+    float: left;
+  }
+
+  input {
+    background-color: #EFEFEF;
+    border: 1px solid #D3D3D3;
+    color: #666;
+    .border-radius(2px 0 0 2px);
+    height: 16px;
+    padding: 4px;
+    width: 380px;
+  }
+
+  button {
+    @shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
+
+    background-color: @linkColor;
+    border: 1px solid @linkColor;
+    .border-radius(0 3px 3px 0);
+    .box-shadow(@shadow);
+    color: #FFF;
+    font-size: 11px;
+    height: 26px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}
+
+.message {
+  border-top: 1px dotted #D3D3D3;
+  bottom: 0;
+  color: lighten(@linkColor, 15%);
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  width: 459px;
+}
+
+.users {
+  background-color: #F9F9F9;
+  float: left;
+  height: 250px;
+  overflow: auto;
+  padding: 15px;
+  width: 140px;
+
+  .user-list li {
+    line-height: 1em;
+    margin-bottom: 8px;
+  }
+}

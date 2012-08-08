@@ -1,0 +1,37 @@
+<div class="nav-bar">
+  <div class="container-fluid">
+    <a class="brand" href="/">Brain Maintain</a>
+
+    <p class="logger">Welcome back, <span class="user">{{currentUser}}</span>! / <a href="/logout">Logout</a></p>
+  </div>
+</div>
+
+<div class="box">
+  <div class="game">
+    <div class="current-question">
+      <p class="question">What is: <b><span id="ph-question-text">{{question.text}}</span></b>?</p>
+
+      <form id="js-question-form">
+        <input id="js-answer-field" type="text" name="answer">
+
+        <button type="submit">Answer</button>
+      </form>
+    </div>
+
+    <div id="ph-message" class="message">
+      {{{message}}}
+    </div>
+  </div>
+
+  <div class="users">
+    <h4 class="label">Connected Users</h4>
+
+    <ul id="ph-users" class="user-list unstyled">
+      {{#each users}}
+        <li id="js-user-{{this.id}}"><span class="js-user user">{{this.username}}</span> / <span class="js-points points">{{this.points}}</span></li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="page"></div>
+</div>
